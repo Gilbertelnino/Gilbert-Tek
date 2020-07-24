@@ -43,8 +43,8 @@
 } */
 
 body {
-  background: var(--clr-light);
-  color: var(--clr-dark);
+  background: var(--clr-dark);
+  color: var(--clr-light);
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
@@ -391,7 +391,17 @@ header {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 800px) {
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
 }
 
 .portfolio__item {
