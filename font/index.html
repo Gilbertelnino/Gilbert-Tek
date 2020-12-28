@@ -17,6 +17,11 @@
       integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
       crossorigin="anonymous"
     />
+    <script
+      async
+      src="https://kit.fontawesome.com/304b37b063.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Update these with your own fonts -->
     <link
@@ -27,27 +32,27 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header style="background-color: #f4f4f4;">
-      <div class="logo">
-        <img src="img/gilbert-tek-log.png" alt="Gilbert Tek logo" />
-      </div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">My Services</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About Me</a>
-          </li>
-          <li class="nav__item">
-            <a href="#work" class="nav__link">My Work</a>
-          </li>
-        </ul>
-      </nav>
+    <header>
+        <div class="container container-nav">
+          <div class="title">
+            <a href="./index.html">
+              <img src="img/gilbert-tek-log.png" alt="logo" />
+            </a>
+          </div>
+          <nav>
+            <i class="fas fa-bars toggle-menu" id="menu"></i>
+            <ul class="show-desktop hide-mobile" id="nav">
+              <li class="exit-btn hide-desktop">
+                <i class="fas fa-times"></i>
+              </li>
+              <li><a href="#home" class="nav-link">home</a></li>
+              <li><a href="#services" class="nav-link">services</a></li>
+              <li><a href="#about" class="nav-link">about</a></li>
+              <li><a href="#work" class="nav-link">my work</a></li>
+              <li><a href="#contact" class="nav-link">contact</a></li>
+            </ul>
+          </nav>
+        </div>
     </header>
 
     <!-- Introduction -->
