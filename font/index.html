@@ -193,6 +193,54 @@
       </div>
     </section>
 
+    <!-- contact us -->
+    <section id="contact">
+      <h2 class="section__title section__title--about contact-title">Contact Us</h2>
+      <div class="contact">
+        <div class="alert">you message sent successfully</div>
+        <p class="error-message"></p>
+        <form id="form" name="contact" data-netlify="true">
+          <div>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              role="name"
+              class="err-border"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+              role="email"
+              class="err-border"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="write your message here..."
+              class="err-border"
+              required
+            ></textarea>
+          </div>
+          <div class="button-container send-btn">
+            <button type="submit" class="btn" id="sign-btn">send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
       <!-- replace with your own email address -->
@@ -230,5 +278,6 @@
     </footer>
 
     <script src="js/index.js"></script>
+    <!-- <script src="js/contact.js"></script> -->
   </body>
 </html>

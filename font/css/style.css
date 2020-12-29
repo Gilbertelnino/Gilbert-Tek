@@ -289,7 +289,9 @@ nav a:hover {
 .intro {
   position: relative;
 }
-
+#home{
+  height: 100vh;
+}
 .intro__img {
   box-shadow: var(--bs);
 }
@@ -504,4 +506,103 @@ nav a:hover {
 
 .social-list__link {
   padding: 0.5em;
+}
+
+/* CONTACT SECTION START */
+
+/* #contact {
+  background: #393333;
+} */
+
+.contact-title {
+  text-align: center;
+  /* padding-bottom: 2rem; */
+  color: #ffffff;
+}
+
+#form {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#form div {
+  margin: 0.5rem 0;
+  width: 300px;
+}
+
+@media (max-width: 350px) {
+  #form div {
+    width: 250px;
+  }
+}
+
+@media (max-width: 300px) {
+  #form div {
+    width: 150px;
+  }
+}
+
+#form label {
+  color: #ffffff;
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 319px) {
+  #form div {
+    width: 250px;
+  }
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  outline: none;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+#name {
+  text-transform: capitalize;
+}
+
+.button-container {
+  text-align: left;
+}
+
+.button-container .btn {
+
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: none;
+}
+
+/* error message and success*/
+
+.error-message {
+  background: #8f0101;
+  color: #ffffff;
+  padding: 10px;
+  margin: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  display: none;
+}
+
+.err-border {
+  border: 0px solid red;
+}
+
+.alert {
+  color: #ffffff;
+  padding: 10px;
+  background: #79c879;
+  margin: 0.5rem 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  display: none;
 }
